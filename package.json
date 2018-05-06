@@ -1,0 +1,28 @@
+{
+  "name": "kubot-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./build/webpack.base.config.js --mode development",
+    "build": "webpack --config ./build/webpack.base.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpb06/kubot-website.git"
+  },
+  "keywords": [],
+  "author": "jpb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpb06/kubot-website/issues"
+  },
+  "homepage": "https://github.com/jpb06/kubot-website#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.3"
+  }
+}
