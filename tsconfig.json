@@ -1,18 +1,22 @@
 {
   "compilerOptions": {
-      "sourceMap": true,
-      "strict": true,
-      "noImplicitReturns": true,
-      "noImplicitAny": true,
-      "module": "es2015",
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "moduleResolution": "node",
-      "target": "es6",
-      "lib": [
-        "es2016",
-        "dom"
-    ]
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@icons/*": [ "node_modules/vue-material-design-icons/*" ]
+    }
   },
   "include": [
       "./src/**/*"
