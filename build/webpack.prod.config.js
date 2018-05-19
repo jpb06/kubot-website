@@ -3,6 +3,9 @@ const {
     VueLoaderPlugin
 } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     entry: path.resolve(__dirname, './../src/index.ts'),
@@ -45,9 +48,12 @@ module.exports = {
         ]
     },
     resolve: {
+        extensions: ['.ts', '.js', '.json'],
         alias: {
             vue$: 'vue/dist/vue.esm.js',
-            '@icons': path.resolve(__dirname, '..', 'node_modules/vue-material-design-icons')
+            '@': path.resolve(__dirname, '..', 'src'),
+            '@icons': path.resolve(__dirname, '..', 'node_modules/vue-material-design-icons'),
+            '@components': path.resolve(__dirname, '..', 'src/components')
         }
     },
     plugins: [
@@ -57,5 +63,7 @@ module.exports = {
             template: 'index.html',
             inject: true
         }),
+
+        //new BundleAnalyzerPlugin()
     ]
 };

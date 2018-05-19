@@ -49,9 +49,12 @@ module.exports = {
         ]
     },
     resolve: {
+        extensions: ['.ts', '.js', '.json'],
         alias: {
             vue$: 'vue/dist/vue.esm.js',
-            '@icons': path.resolve(__dirname, '..', 'node_modules/vue-material-design-icons')
+            '@': path.resolve(__dirname, '..', 'src'),
+            '@icons': path.resolve(__dirname, '..', 'node_modules/vue-material-design-icons'),
+            '@components': path.resolve(__dirname, '..', 'src/components')
         }
     },
     plugins: [

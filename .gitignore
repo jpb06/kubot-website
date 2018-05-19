@@ -39,3 +39,4 @@ dist
 /.vs/WebsiteRepository/v15/.suo
 /.vs/config/applicationhost.config
 /WebsiteRepository.sln
+/.vs
