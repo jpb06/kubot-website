@@ -1,26 +1,52 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "target": "es5",
     "module": "es2015",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": true,
     "moduleResolution": "node",
-    "target": "es6",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
     "lib": [
-      "es2016",
-      "dom"
+      "dom",
+      "es2015"
     ],
-    "baseUrl": "./",
     "paths": {
-      "@/*": [ "src/*" ],
-      "@icons/*": [ "node_modules/vue-material-design-icons/*" ],
-      "@components/*": [ "src/components/*" ]
+      "~/": [
+        "./"
+      ],
+      "~/assets/*": [
+        "./assets/*"
+      ],
+      "~/components/*": [
+        "./components/*"
+      ],
+      "~/middleware/*": [
+        "./middleware/*"
+      ],
+      "~/pages/*": [
+        "./pages/*"
+      ],
+      "~/plugins/*": [
+        "./plugins/*"
+      ],
+      "~/static/*": [
+        "./static/*"
+      ],
+      "~/store/*": [
+        "./store/*"
+      ],
+      "~/types/*": [
+        "./types/*"
+      ],
+      "~/test/*": [
+        "./test/*"
+      ]
     }
-  },
-  "include": [
-      "./src/**/*"
-  ]
+  }
 }

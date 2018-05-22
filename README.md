@@ -1,29 +1,22 @@
-# kubot-website
+# nuxt-ts-test
 
-## Summary
+> Nuxt.js project
 
-This will be used to make guild configuration easier for kuBot.
+## Build Setup
 
-Based around:
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-* Typescript
-* Vue.js
-* scss for styling
-* plain html for dom
-* Webpack
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-## To fix later
+# build for production and launch server
+$ npm run build
+$ npm start
 
-### Hoek vulnerability
-
-Issue with hoek (via request via node-sass)
-
-```npm
-npm ls hoek
+# generate static project
+$ npm run generate
 ```
 
-Last issue on node-sass
-<https://github.com/sass/node-sass/issues/2355>
-
-Vulnerability =
-<https://nvd.nist.gov/vuln/detail/CVE-2018-3728>
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
